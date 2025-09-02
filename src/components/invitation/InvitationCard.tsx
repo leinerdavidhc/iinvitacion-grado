@@ -63,7 +63,7 @@ export default function InvitationCard() {
         transition={{ duration: 1, delay: 1 }}
         className="space-y-4 mb-8"
       >
-        <div className="font-headline tracking-wide text-gray-300 flex flex-col items-center text-sm md:text-lg">
+        <div className="font-headline tracking-wide text-gray-300 flex flex-col items-center text-base md:text-lg">
           <span className="whitespace-nowrap">Juana María Cabrera Ramos</span>
           <span className='mx-2'>&</span>
           <span className="whitespace-nowrap">Wilmar Enrique Hoyos Mestra</span>
@@ -80,7 +80,7 @@ export default function InvitationCard() {
         className="relative my-6 flex justify-center items-center"
       >
         <h2 
-          className="font-headline text-white text-lg sm:text-2xl md:text-5xl whitespace-nowrap"
+          className="font-headline text-white text-xl sm:text-2xl md:text-5xl whitespace-nowrap"
           style={{ 
             textShadow: `
               0 0 30px rgba(255, 255, 255, 0.8),
