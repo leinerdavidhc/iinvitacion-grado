@@ -63,8 +63,10 @@ export default function InvitationCard() {
         transition={{ duration: 1, delay: 1 }}
         className="space-y-4 mb-8"
       >
-        <div className="font-headline text-lg tracking-wide text-gray-300">
-          Juana María Cabrera Ramos &amp; Wilmar Enrique Hoyos Mestra
+        <div className="font-headline text-lg tracking-wide text-gray-300 flex flex-col items-center">
+          <span>Juana María Cabrera Ramos</span>
+          <span className='mx-2'>&</span>
+          <span>Wilmar Enrique Hoyos Mestra</span>
         </div>
         <p className="text-yellow-200/80 text-sm uppercase tracking-widest font-light">
           participan a ustedes al grado de su hijo:
@@ -75,10 +77,10 @@ export default function InvitationCard() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, delay: 1.5, type: 'spring' }}
-        className="relative my-6 flex flex-col items-center"
+        className="relative my-6 flex justify-center"
       >
         <h2 
-          className="font-headline text-white relative z-10 text-3xl md:text-5xl whitespace-nowrap"
+          className="font-headline text-white relative z-10 text-3xl md:text-5xl whitespace-nowrap text-center"
           style={{ 
             textShadow: `
               0 0 30px rgba(255, 255, 255, 0.8),
