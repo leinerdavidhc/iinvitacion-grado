@@ -66,7 +66,7 @@ export default function InvitationCard() {
           className="space-y-4 mb-8"
         >
           <div className="font-headline text-lg tracking-wide text-gray-300">
-            Juana María Cabrera Ramos & Wuilmar Enrique Hoyos Mestra
+            Juana María Cabrera Ramos &amp; Wilmar Enrique Hoyos Mestra
           </div>
           <p className="text-yellow-200/80 text-sm uppercase tracking-widest font-light">
             participan a ustedes al grado de su hijo:

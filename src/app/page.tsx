@@ -30,16 +30,16 @@ export default function GraduationInvitationPage() {
       <AnimatePresence>
         {isVisible && (
           <motion.main
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }}
-            transition={{ duration: 1.5, type: "spring" }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
             className="w-full max-w-lg z-10 relative"
           >
             <InvitationCard />
             <EventDetails />
             
-            <div className="mt-12 flex justify-center">
+            <div className="mt-8 flex justify-center">
               <DownloadButton />
             </div>
           </motion.main>

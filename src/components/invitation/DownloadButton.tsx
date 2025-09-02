@@ -5,16 +5,14 @@ import { Download } from 'lucide-react';
 const DownloadButton = () => {
   return (
     <motion.a
-      href="/invitation.pdf" 
+      href="/invitation.pdf"
       download
-      className="animated-border-button group"
+      className="inline-flex items-center justify-center px-8 py-3 bg-black/20 border border-primary/30 rounded-full text-base font-medium text-gray-200 hover:bg-primary/20 hover:text-white transition-all duration-300 group"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >
-      <span className="animated-border-button-inner">
-        <Download className="w-5 h-5 mr-2 transition-transform group-hover:translate-x-1" />
-        Descargar Invitación
-      </span>
+      <Download className="w-5 h-5 mr-2 transition-transform group-hover:text-primary" />
+      Descargar Invitación
     </motion.a>
   );
 };

@@ -1,32 +1,31 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, MapPin } from 'lucide-react';
+import { Calendar, Clock } from 'lucide-react';
 
 const details = [
-  { icon: Calendar, text: 'Sábado, 28 de Septiembre, 2024' },
-  { icon: Clock, text: '7:00 PM' },
-  { icon: MapPin, text: 'Salón de eventos "La Gala"' },
+  { icon: Calendar, text: '19 de Septiembre, 2025' },
+  { icon: Clock, text: '5:00 PM' },
 ];
 
 const EventDetails = () => {
   return (
     <motion.div 
-      className="mt-8 space-y-6"
+      className="mt-12 space-y-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 2.5 }}
     >
-      <p className="text-center text-lg italic text-yellow-200/90 font-headline shimmer-text">
-        "Con nuestros mejores deseos para un futuro brillante."
-      </p>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 text-center mt-6">
+      <div className="flex flex-col items-center gap-4 text-center">
         {details.map((item, index) => (
-          <div key={index} className="flex items-center gap-3">
-            <item.icon className="w-6 h-6 text-primary icon-glow-intense" />
-            <span className="text-base text-gray-300">{item.text}</span>
+          <div key={index} className="flex items-center gap-3 bg-black/20 border border-primary/20 rounded-full px-6 py-3 w-full max-w-xs justify-center">
+            <item.icon className="w-5 h-5 text-primary" />
+            <span className="text-base text-gray-200">{item.text}</span>
           </div>
         ))}
       </div>
+       <p className="text-center text-lg italic text-yellow-200/90 font-headline mt-8">
+        "Su presencia será nuestro mayor honor"
+      </p>
     </motion.div>
   );
 };
