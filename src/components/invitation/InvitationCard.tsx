@@ -89,9 +89,7 @@ export default function InvitationCard() {
             filter: 'drop-shadow(0 0 20px rgba(255, 255, 255, 0.5))',
             fontWeight: 700,
             fontStyle: 'italic',
-            letterSpacing: '0.02em',
-            left: '50%',
-            transform: 'translateX(-50%)'
+            letterSpacing: '0.02em'
           }}
         >
           Leiner David Hoyos Cabrera
