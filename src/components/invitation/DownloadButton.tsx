@@ -6,7 +6,7 @@ const DownloadButton = () => {
   return (
     <motion.a
       href="/invitacion.jpg"
-      download
+      download="invitacion.jpg"
       className="inline-flex items-center justify-center px-8 py-3 bg-black/20 border border-primary/30 rounded-full text-base font-medium text-gray-200 hover:bg-primary/20 hover:text-white transition-all duration-300 group"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
