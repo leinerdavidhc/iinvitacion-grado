@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const SvgTopLeft = () => {
   return (
     <motion.div
-      className="absolute top-4 left-4 w-24 h-24 md:w-32 md:h-32 z-20 text-primary/30"
+      className="absolute top-4 left-4 w-24 h-24 md:w-32 md:h-32 text-primary/30 z-0"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1, y: [0, -10, 0] }}
       transition={{ 
@@ -23,7 +23,7 @@ const SvgTopLeft = () => {
         preserveAspectRatio="xMidYMid meet"
       >
         <g
-          transform="translate(0.000000,0.000000) scale(0.100000,0.100000)"
+          transform="translate(0,0) scale(0.1,0.1)"
           fill="currentColor"
           stroke="none"
         >
