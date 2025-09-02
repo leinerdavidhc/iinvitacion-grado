@@ -63,12 +63,12 @@ export default function InvitationCard() {
         transition={{ duration: 1, delay: 1 }}
         className="space-y-4 mb-8"
       >
-        <div className="font-headline text-lg tracking-wide text-gray-300 flex flex-col items-center">
-          <span>Juana María Cabrera Ramos</span>
+        <div className="font-headline tracking-wide text-gray-300 flex flex-col items-center text-sm md:text-lg">
+          <span className="whitespace-nowrap">Juana María Cabrera Ramos</span>
           <span className='mx-2'>&</span>
-          <span>Wilmar Enrique Hoyos Mestra</span>
+          <span className="whitespace-nowrap">Wilmar Enrique Hoyos Mestra</span>
         </div>
-        <p className="text-yellow-200/80 text-sm uppercase tracking-widest font-light">
+        <p className="text-yellow-200/80 text-xs md:text-sm uppercase tracking-widest font-light whitespace-nowrap">
           participan a ustedes al grado de su hijo:
         </p>
       </motion.div>
@@ -77,10 +77,10 @@ export default function InvitationCard() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, delay: 1.5, type: 'spring' }}
-        className="relative my-6 flex justify-center"
+        className="relative my-6 flex justify-center items-center"
       >
         <h2 
-          className="font-headline text-white relative z-10 text-2xl md:text-5xl whitespace-nowrap text-center"
+          className="font-headline text-white text-lg sm:text-2xl md:text-5xl whitespace-nowrap"
           style={{ 
             textShadow: `
               0 0 30px rgba(255, 255, 255, 0.8),
@@ -96,8 +96,6 @@ export default function InvitationCard() {
         >
           Leiner David Hoyos Cabrera
         </h2>
-        
-        <div className="name-underline" />
       </motion.div>
       
       <div className="premium-section-divider">
@@ -114,13 +112,13 @@ export default function InvitationCard() {
         transition={{ duration: 1, delay: 2.2 }}
         className="space-y-4"
       >
-        <h3 className="degree-title">
+        <h3 className="degree-title whitespace-nowrap text-xl md:text-3xl">
           Ingeniero de Sistemas
         </h3>
-        <p className="text-yellow-200/70 text-sm uppercase tracking-widest">
+        <p className="text-yellow-200/70 text-xs md:text-sm uppercase tracking-widest whitespace-nowrap">
           Título otorgado por la
         </p>
-        <p className="university-name">
+        <p className="university-name whitespace-nowrap text-base md:text-lg">
           Universidad de La Guajira
         </p>
       </motion.div>
