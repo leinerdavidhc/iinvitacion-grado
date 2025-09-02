@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import ParticleBackground from "@/components/invitation/ParticleBackground";
 import InvitationCard from "@/components/invitation/InvitationCard";
@@ -27,19 +27,24 @@ export default function GraduationInvitationPage() {
 
       <div className="ambient-glow" />
       
-      <motion.main
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
-        transition={{ duration: 1.5, type: "spring" }}
-        className="w-full max-w-lg z-10 relative"
-      >
-        <InvitationCard />
-        <EventDetails />
-        
-        <div className="mt-12 flex justify-center">
-          <DownloadButton />
-        </div>
-      </motion.main>
+      <AnimatePresence>
+        {isVisible && (
+          <motion.main
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 1.5, type: "spring" }}
+            className="w-full max-w-lg z-10 relative"
+          >
+            <InvitationCard />
+            <EventDetails />
+            
+            <div className="mt-12 flex justify-center">
+              <DownloadButton />
+            </div>
+          </motion.main>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
