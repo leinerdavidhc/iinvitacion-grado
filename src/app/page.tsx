@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import ParticleBackground from "@/components/invitation/ParticleBackground";
 import InvitationCard from "@/components/invitation/InvitationCard";
 import DownloadButton from "@/components/invitation/DownloadButton";
-import EventDetails from "@/components/invitation/EventDetails";
 import CornerElements from "@/components/invitation/CornerElements";
 import CustomCursor from "@/components/invitation/CustomCursor";
 
@@ -18,7 +17,7 @@ export default function GraduationInvitationPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] font-body text-white overflow-hidden relative flex flex-col items-center justify-center p-4 pb-20">
+    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] font-body text-white overflow-hidden relative flex flex-col items-center justify-center p-4 pb-24">
       <CustomCursor />
       
       <ParticleBackground />
