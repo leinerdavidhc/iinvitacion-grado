@@ -78,9 +78,8 @@ export default function InvitationCard() {
         transition={{ duration: 1.2, delay: 1.5, type: 'spring' }}
       >
         <h2 
-          className="font-headline text-white relative z-10"
+          className="font-headline text-white relative z-10 text-3xl md:text-5xl whitespace-nowrap"
           style={{ 
-            fontSize: 'clamp(1.5rem, 6vw, 3rem)',
             textShadow: `
               0 0 30px rgba(255, 255, 255, 0.8),
               0 0 60px rgba(255, 215, 0, 0.6),
