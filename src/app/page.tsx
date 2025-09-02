@@ -7,6 +7,7 @@ import InvitationCard from "@/components/invitation/InvitationCard";
 import DownloadButton from "@/components/invitation/DownloadButton";
 import CornerElements from "@/components/invitation/CornerElements";
 import CustomCursor from "@/components/invitation/CustomCursor";
+import EventDetails from "@/components/invitation/EventDetails";
 
 export default function GraduationInvitationPage() {
   const [isVisible, setIsVisible] = useState(false);
