@@ -72,10 +72,10 @@ export default function InvitationCard() {
       </motion.div>
 
       <motion.div
-        className="graduate-name-container"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, delay: 1.5, type: 'spring' }}
+        className="relative my-6 flex flex-col items-center"
       >
         <h2 
           className="font-headline text-white relative z-10 text-3xl md:text-5xl whitespace-nowrap"
