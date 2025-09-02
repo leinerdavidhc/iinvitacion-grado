@@ -80,7 +80,7 @@ export default function InvitationCard() {
         <h2 
           className="font-headline text-white relative z-10"
           style={{ 
-            fontSize: 'clamp(2.5rem, 6vw, 4rem)',
+            fontSize: 'clamp(1.5rem, 6vw, 3rem)',
             textShadow: `
               0 0 30px rgba(255, 255, 255, 0.8),
               0 0 60px rgba(255, 215, 0, 0.6),
@@ -93,7 +93,7 @@ export default function InvitationCard() {
             letterSpacing: '0.02em'
           }}
         >
-          Leiner David<br />Hoyos Cabrera
+          Leiner David Hoyos Cabrera
         </h2>
         
         <div className="name-underline" />
