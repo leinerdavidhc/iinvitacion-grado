@@ -60,7 +60,7 @@ export default function ParticleBackground() {
 
     setDimensions({ width: window.innerWidth, height: window.innerHeight });
 
-    const newParticles = Array.from({ length: 25 }, (_, i) => ({
+    const newParticles = Array.from({ length: 15 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
@@ -72,7 +72,7 @@ export default function ParticleBackground() {
     }));
     setParticles(newParticles);
 
-    const newSparkles = Array.from({ length: 10 }, (_, i) => ({
+    const newSparkles = Array.from({ length: 5 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
@@ -82,7 +82,7 @@ export default function ParticleBackground() {
     }));
     setSparkles(newSparkles);
 
-    const newOrbs = Array.from({ length: 2 }, (_, i) => ({
+    const newOrbs = Array.from({ length: 1 }, (_, i) => ({
       id: i,
       width: Math.random() * 150 + 80,
       height: Math.random() * 150 + 80,
@@ -104,7 +104,7 @@ export default function ParticleBackground() {
         size: Math.random() * 1.5 + 0.5,
         angle: Math.random() * 60 + 30
       }]);
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(meteorInterval);
   }, [isClient]);
