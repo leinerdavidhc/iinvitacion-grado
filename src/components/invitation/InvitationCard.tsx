@@ -80,7 +80,7 @@ export default function InvitationCard() {
         className="relative my-6 flex justify-center"
       >
         <h2 
-          className="font-headline text-white relative z-10 text-3xl md:text-5xl whitespace-nowrap text-center"
+          className="font-headline text-white relative z-10 text-2xl md:text-5xl whitespace-nowrap text-center"
           style={{ 
             textShadow: `
               0 0 30px rgba(255, 255, 255, 0.8),
