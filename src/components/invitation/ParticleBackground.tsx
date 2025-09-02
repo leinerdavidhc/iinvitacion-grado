@@ -33,10 +33,21 @@ type Meteor = {
   angle: number;
 };
 
+type Orb = {
+  id: number;
+  width: number;
+  height: number;
+  left: string;
+  top: string;
+  duration: number;
+  delay: number;
+}
+
 export default function ParticleBackground() {
   const [particles, setParticles] = useState<Particle[]>([]);
   const [meteors, setMeteors] = useState<Meteor[]>([]);
   const [sparkles, setSparkles] = useState<Sparkle[]>([]);
+  const [orbs, setOrbs] = useState<Orb[]>([]);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
@@ -63,6 +74,17 @@ export default function ParticleBackground() {
       delay: Math.random() * 5
     }));
     setSparkles(newSparkles);
+
+    const newOrbs = Array.from({ length: 8 }, (_, i) => ({
+      id: i,
+      width: Math.random() * 200 + 100,
+      height: Math.random() * 200 + 100,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      duration: 8 + Math.random() * 4,
+      delay: Math.random() * 3,
+    }));
+    setOrbs(newOrbs);
 
     const meteorInterval = setInterval(() => {
       setMeteors(prev => [...prev, {
@@ -230,15 +252,15 @@ export default function ParticleBackground() {
       ))}
 
       <div className="absolute inset-0">
-        {[...Array(8)].map((_, i) => (
+        {orbs.map((orb) => (
           <motion.div
-            key={i}
+            key={orb.id}
             className="absolute rounded-full"
             style={{
-              width: Math.random() * 200 + 100,
-              height: Math.random() * 200 + 100,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              width: orb.width,
+              height: orb.height,
+              left: orb.left,
+              top: orb.top,
               background: 'radial-gradient(circle, rgba(255, 215, 0, 0.08), transparent)',
               transform: 'translate(-50%, -50%)'
             }}
@@ -247,9 +269,9 @@ export default function ParticleBackground() {
               opacity: [0.3, 0.6, 0.3]
             }}
             transition={{
-              duration: 8 + Math.random() * 4,
+              duration: orb.duration,
               repeat: Infinity,
-              delay: Math.random() * 3,
+              delay: orb.delay,
               ease: "easeInOut"
             }}
           />
