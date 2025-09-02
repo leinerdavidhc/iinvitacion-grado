@@ -3,8 +3,20 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Golden Gala Invite',
-  description: 'An elegant invitation to a graduation celebration.',
+  title: 'Invitación Leiner Hoyos',
+  description: 'Su presencia será nuestro mayor honor',
+  openGraph: {
+    title: 'Invitación Leiner Hoyos',
+    description: 'Su presencia será nuestro mayor honor',
+    images: [{
+      url: '/og.png',
+      width: 1200,
+      height: 630,
+      alt: 'Invitación a Graduación',
+    }],
+    locale: 'es_CO',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
