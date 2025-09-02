@@ -18,7 +18,7 @@ export default function GraduationInvitationPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] font-body text-white overflow-hidden relative flex flex-col items-center justify-center p-4 pb-28">
+    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] font-body text-white overflow-hidden relative flex flex-col items-center justify-center p-4 pb-20">
       <CustomCursor />
       
       <ParticleBackground />
