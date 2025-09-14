@@ -8,6 +8,7 @@ import DownloadButton from "@/components/invitation/DownloadButton";
 import CornerElements from "@/components/invitation/CornerElements";
 import CustomCursor from "@/components/invitation/CustomCursor";
 import EventDetails from "@/components/invitation/EventDetails";
+import CountdownTimer from "@/components/invitation/CountdownTimer";
 
 export default function GraduationInvitationPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,6 +38,7 @@ export default function GraduationInvitationPage() {
             className="w-full max-w-lg z-10 relative"
           >
             <InvitationCard />
+            <CountdownTimer />
             <EventDetails />
             
             <div className="mt-8 flex justify-center">

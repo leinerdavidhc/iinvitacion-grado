@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Invitación Leiner Hoyos',
     description: 'Su presencia será nuestro mayor honor',
     images: [{
-      url: '/og.png',
+      url: 'https://invitacion-leiner.netlify.app/og.png',
       width: 1200,
       height: 630,
       alt: 'Invitación a Graduación',
