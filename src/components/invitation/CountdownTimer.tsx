@@ -14,8 +14,8 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     setIsClient(true);
-    // Target date: September 19, 2025, 00:00:00 Colombia Time (UTC-5)
-    const targetDate = new Date('2025-09-19T00:00:00-05:00').getTime();
+    // Target date: September 19, 2025, 17:00:00 Colombia Time (UTC-5)
+    const targetDate = new Date('2025-09-19T17:00:00-05:00').getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
